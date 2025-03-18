@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Chat_app.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Chat_app.Class.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
