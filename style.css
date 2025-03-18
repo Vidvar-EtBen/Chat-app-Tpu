@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". hText login";
+    align-items: center;
+    justify-items: center;
+    background-color: #7ba7a1;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    
+    h1 {
+        font-size: 1.5em;
+        grid-area: hText;
+    }
+
+    button {
+        grid-area: login;
+        justify-self: right;
+        background-color: #333;
+        color: white;
+        border: 1px solid white;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            color: #333;
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-areas: "nav chat";
+    height: calc(100vh - 100px);
+    background-color: #cecece;
+
+    #Chat-container {
+        grid-area: chat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        padding-right: 0;
+        
+        #Chat-messages {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            overflow-y: scroll;
+            height: 100%;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        form {
+            align-self: center;
+            display: flex;
+            width: 90%;
+
+            input {
+                padding: 5px;
+                border: 1px solid #333;
+            }
+
+            input:first-child {
+                flex: 1;
+            }
+        }
+    }
+
+    #Chat-list {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        overflow-y: auto;
+        height: 100%;
+        background-color: rgb(215, 214, 221);
+    }
+}
+
+/* Customize scrollbar for WebKit browsers */
+#Chat-list::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+#Chat-list::-webkit-scrollbar-track {
+    background: #cecece; /* Background of the scrollbar track */
+}
+
+#Chat-list::-webkit-scrollbar-thumb {
+    background-color: #7ba7a1; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #cecece; /* Space around the scrollbar thumb */
+}
+
+/* Customize scrollbar for Firefox */
+#Chat-list {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #7ba7a1 #cecece; /* Color of the scrollbar thumb and track */
+}
+
+#Chat-messages::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+#Chat-messages::-webkit-scrollbar-track {
+    background: #cecece; /* Background of the scrollbar track */
+}
+
+#Chat-messages::-webkit-scrollbar-thumb {
+    background-color: #7ba7a1; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #cecece; /* Space around the scrollbar thumb */
+}
+
+/* Customize scrollbar for Firefox */
+#Chat-messages {
+    scrollbar-width: 10px; /* Width of the scrollbar */
+    scrollbar-color: #7ba7a1 #cecece; /* Color of the scrollbar thumb and track */
+}
+
+#Login {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        gap: 10px;
+
+        input {
+            padding: 5px;
+            border: 1px solid #333;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #3f3f3f;
+            }
+        }
+
+        #Login-close {
+            position: absolute;
+            align-self: end;
+            color: #333;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            transform: translate(20px, -20px);
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #3f3f3f;
+                color: white;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "input send";
+    background-color: #7ba7a1;
+    color: white;
+    padding: 10px;
+    height: 50px;
+}
