@@ -13,13 +13,18 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". hText login";
+    grid-template-areas: "pText hText login";
     align-items: center;
     justify-items: center;
     background-color: #7ba7a1;
     color: white;
     padding: 10px;
     height: 50px;
+
+    p {
+        grid-area: pText;
+        justify-self: self-start;
+    }
     
     h1 {
         font-size: 1.5em;
