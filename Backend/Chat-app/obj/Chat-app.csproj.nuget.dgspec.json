@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\64323\\source\\repos\\Chat-app-gruppe\\Chat-app\\Chat-app.csproj": {}
+    "C:\\Users\\65770\\OneDrive - Campus Vejle\\Dokumenter\\GitHub\\Chat-app-Tpu\\Backend\\Chat-app\\Chat-app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\64323\\source\\repos\\Chat-app-gruppe\\Chat-app\\Chat-app.csproj": {
+    "C:\\Users\\65770\\OneDrive - Campus Vejle\\Dokumenter\\GitHub\\Chat-app-Tpu\\Backend\\Chat-app\\Chat-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\64323\\source\\repos\\Chat-app-gruppe\\Chat-app\\Chat-app.csproj",
+        "projectUniqueName": "C:\\Users\\65770\\OneDrive - Campus Vejle\\Dokumenter\\GitHub\\Chat-app-Tpu\\Backend\\Chat-app\\Chat-app.csproj",
         "projectName": "Chat-app",
-        "projectPath": "C:\\Users\\64323\\source\\repos\\Chat-app-gruppe\\Chat-app\\Chat-app.csproj",
-        "packagesPath": "C:\\Users\\64323\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\64323\\source\\repos\\Chat-app-gruppe\\Chat-app\\obj\\",
+        "projectPath": "C:\\Users\\65770\\OneDrive - Campus Vejle\\Dokumenter\\GitHub\\Chat-app-Tpu\\Backend\\Chat-app\\Chat-app.csproj",
+        "packagesPath": "C:\\Users\\65770\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\65770\\OneDrive - Campus Vejle\\Dokumenter\\GitHub\\Chat-app-Tpu\\Backend\\Chat-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\64323\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\65770\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
